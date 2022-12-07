@@ -49,7 +49,7 @@ function App() {
   }, [longitude, latitude]);
 
   const geocodingapiHandler = async () => {
-    const url = `http://api.openweathermap.org/geo/1.0/direct?q=${place}&limit=5&appid=${API_KEY}`;
+    const url = `https://api.openweathermap.org/geo/1.0/direct?q=${place}&limit=5&appid=${API_KEY}`;
     await axios
       .get(url)
       .then((response) => {
