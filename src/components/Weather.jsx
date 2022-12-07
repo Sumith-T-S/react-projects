@@ -1,7 +1,7 @@
 import { Button, Card } from "react-bootstrap";
 import moment from "moment";
 
-function Weather({ data, icon, dayornight, setData }) {
+function Weather({ data, icon, dayornight, clearData }) {
   return (
     <Card className="custom-card">
       <Card.Header
@@ -109,7 +109,7 @@ function Weather({ data, icon, dayornight, setData }) {
         <Button
           className="btn-rds"
           variant="primary"
-          onClick={() => setData("")}
+          onClick={() => clearData()}
           style={{ display: "flex", float: "right" }}
         >
           Check Another
